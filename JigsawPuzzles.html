@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzles</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(#d9ebe9, #798f8c);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: normal;
+    }
+
+    h1,
+    h2,
+    p {
+      color: #33262d;
+      font-family: cursive, Helvetica, sans-serif;
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .jp {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px;
+      border-style: groove;
+      border-color: lightblue;
+      border-radius: 25px;
+    }
+
+    .puzzle {
+      color: #003b32;
+      font-style: italic;
+    }
+
+    #beginning {
+      max-width: 100%;
+      border-radius: 35px;
+    }
+
+    #wave {
+      max-width: 100%;
+      border-radius: 60px;
+    }
+
+    .wiki {
+      display: block;
+      margin: 0 auto;
+      padding-top: 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .wiki:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .coder {
+      font-size: 18px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Courier, monospace;
+      background: white;
+      color: #40817a;
+      border: 1px solid #aca69f;
+      border-radius: 10px;
+      transition: ease-in 200ms transparent;
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+      cursor: pointer;
+      color: white;
+      background: #40817a;
+    }
+  </style>
+  <body>
+    <div class="jp">
+      <h1><span class="puzzle">Jigsaw Puzzles</span></h1>
+
+      <h2>
+        Ever wonder how <span class="puzzle">Jigsaw puzzles</span> were created?
+      </h2>
+
+      <img
+        id="beginning"
+        src="https://www.clickorlando.com/resizer/J2_pk7WtPcWi2oFzZXF2ed89mcg=/1600x1066/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/3ZY5NELK25FVRCE6GNJHN2MV2I.jpg"
+        alt=""
+      />
+
+      <p>
+        In 1767 an engraver and mapmaker named
+        <strong>John Spilsbury</strong> is credited with inventing the first
+        <span class="puzzle">Jigsaw Puzzle</span>. They were created for
+        teaching geography. Early jigsaws were known as dissections, they were
+        produced by mounting maps on sheets of hardwood and cutting along
+        national boundaries. <br />
+        In the late 1800's cardboard
+        <span class="puzzle">jigsaw puzzle</span> started to appear but were
+        slowly replaced with wooden jigsaw due to the manufacture. Most modern
+        <span class="puzzle">jigsaw puzzles</span> are made out of paperboard
+        since they are easier and cheaper to mass-produce. A puzzle die is a
+        flat board, often made from plywood, which has slots cut or burned in
+        the same shape as the knives that are used. New technology has enabled
+        laser-cutting of wooden or acrylic
+        <span class="puzzle">jigsaw puzzles</span>. With the advantage of using
+        a laser, puzzles can be custom cut into any size, shape and number of
+        pieces.<br />
+        Durning the Great Depression in 1929, puzzles experienced a huge surge
+        of popularity. American companies began mass-producing puzzles out of
+        cardboard. This reduced the cost drastically, durning a time when most
+        families could not afford expensive activities, jigsaws provided a
+        family fun. <br />
+        There has been another surge of
+        <span class="puzzle">jigsaw puzzles</span> during the Covid-19 pandemic
+        with stay at home orders, that can be comparable to that of the Great
+        Depression.
+      </p>
+
+      <img
+        id="wave"
+        src="https://cdn.shopify.com/s/files/1/2940/2980/products/waves-puzzle-iridescent-detail-fw2020_900x.jpg?v=1603907678"
+        alt=""
+      />
+
+      <p>
+        According to the <strong>Alzheimer Society of Canada</strong>, doing
+        <span class="puzzle">jigsaw puzzles</span> is one of the many activites
+        that can help keep the brain active and may contribute to reducing the
+        risk of developing Alzheimer's disease.
+      </p>
+
+      <hr />
+
+      <a
+        href="https://en.wikipedia.org/wiki/Jigsaw_puzzle"
+        target="_blank"
+        class="wiki"
+      >
+        <em>Learn more here on wikipedia</em>
+      </a>
+
+      <p>To buy Puzzles click below 👇</p>
+
+      <button>Click Here</button>
+
+      <p class="coder">Coded by Rocio Valenzuela</p>
+
+      <script>
+        function here() {
+          let firstName = prompt("What is your first name?");
+          let pieces = prompt("Have you done a 1,000 piece puzzle before?");
+
+          if (pieces === "yes") {
+            alert("That's awesome ☺ " + firstName + "!");
+          } else {
+            alert("You should buy one, " + firstName + "☺");
+          }
+        }
+
+        let hereButton = document.querySelector("button");
+        hereButton.addEventListener("click", here);
+      </script>
+    </div>
+  </body>
+</html>
